@@ -5,9 +5,6 @@ export default class App extends PureComponent {
     counter: 0
   }
 
-  componentWillReceiveProps(nextProps) {
-    console.log('componentWillReceiveProps');
-  }
   handleIncrease = () => {
     this.setState({
       counter: this.state.counter + 1

@@ -5,15 +5,12 @@ export default class App extends PureComponent {
     counter: 0
   }
 
-  componentWillReceiveProps(nextProps) {
-    console.log('componentWillReceiveProps');
-  }
-  handleIncrease = () => {
+  handleIncrease() {
     this.setState({
       counter: this.state.counter + 1
     })
   }
-  handleDecrease = () => {
+  handleDecrease() {
     this.setState({
       counter: this.state.counter - 1
     })
@@ -21,9 +18,9 @@ export default class App extends PureComponent {
   render() {
     return (
       <div>
-        <button onClick={this.handleIncrease}>+</button>
+        <button onClick={() => this.handleIncrease()}>+</button>
         <span>counter: {this.state.counter}</span>
-        <button onClick={this.handleDecrease}>-</button>
+        <button onClick={() => this.handleDecrease()}>-</button>
       </div>
     )
   }

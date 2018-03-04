@@ -1,10 +1,11 @@
 import React from 'react'
 import {render} from 'react-dom'
+import { AppContainer } from 'react-hot-loader';
 
 import App from './App'
 
 const Render = () => {
-  render(<App />, document.getElementById('root'));
+  render(<AppContainer><App /></AppContainer>, document.getElementById('root'));
 }
 
 Render()
@@ -15,4 +16,4 @@ if (module.hot) {
   })
 }
 
-window.Render = Render;
+window.Render = Render
