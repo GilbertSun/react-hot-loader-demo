@@ -1,0 +1,11 @@
+{
+  "name": "react-hot-loader-demo",
+  "version": "1.0.0",
+  "description": "some example for dive into react hot loader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "GilbertSun <szb4321@gmail.com>",
+  "license": "ISC"
+}
